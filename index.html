@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Survey Form</title>
+</head>
+<body>
+    <main id="container">
+        <header>
+            <h1 id="title">COSTUMER SURVEY FORM</h1>
+        </header>
+
+        <div id="form-div">
+            <div class="vektor-img"></div>
+
+            <form id="survey-form" action="">
+                <p id="description">
+                    Thank you for taking the Costumer Survey. Please rate your satisfaction level down below.
+                </p>
+
+                <br>
+
+                <label for="name" id="name-label">Name:</label><br>
+                <input
+                    class="text-box"
+                    id="name"
+                    name="name"
+                    type="text"
+                        placeholder="Input your name..."
+                        required
+                />
+                
+                <br><br>
+                
+                <label for="email" id="email-label">Email:<label><br>
+                <input
+                    class="text-box"
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Input your email..."
+                    required
+                />
+                    
+                <br><br>
+                
+                <label for="number" id="number-label">Age:<span>(optional)</span></label><br>
+                <input
+                    class="text-box"
+                    id="number"
+                    name="age"
+                    type="number"
+                    min="18"
+                    max="99"
+                    placeholder="Age..."
+                    required
+                />
+
+                <br><br>
+
+                <label for="role">Select which option bestdescribes your current role:</label><br>
+                <select id="dropdown" name="roles" required>
+                    <option value="not-choose" disabledselected>Current role...</option>
+                    <option value="student">Student</option>
+                    <option value="full-time-job">Full TimeJob</option>
+                    <option value="part-time-job">Part TimeJob</option>
+                    <option value="prefer-not-to-say">PreferNot To Say</option>
+                </select>
+
+                <br><br>
+                
+                <fieldset>
+                    <legend>How satisfied are you with thedeliver of our products?</legend>
+                    <input
+                        type="radio"
+                        name="items-1" 
+                        id="v-satisfied"
+                        value="very-satisfied"
+                        required
+                    />
+                    <label for="very-satisfied">VerySatisfied</label>
+                    <br>
+                    <input
+                        type="radio"
+                        name="items-1" 
+                        id="satisfied"
+                        value="satisfied"
+                        required
+                    />
+                    <label for="satisfied">Satisfied</label>
+                    <br>
+                    <input 
+                        type="radio" 
+                        name="items-1" 
+                        id="neutral"
+                        value="neutral"
+                        value="neutral"
+                        required
+                    />
+                    <label for="neutral">Neutral</label>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
