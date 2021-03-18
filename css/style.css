@@ -22,12 +22,13 @@
 }
 #container header {
   border: 2px solid green;
+  font-size: 100%;
 }
 #container #form-div {
   border: 2px solid red;
   height: 80%;
   display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, minmax(auto, 1fr));
   grid-template-areas: "vektor vektor form form";
 }
 #container #form-div .vektor-img {
@@ -38,6 +39,7 @@
   border: 2px solid blue;
   grid-area: form;
   padding: 20px;
+  overflow: scroll;
 }
 #container #form-div #survey-form #description {
   text-align: center;
@@ -51,6 +53,16 @@
   width: 100%;
   height: 45px;
   padding: 10px;
+}
+@media (max-width: 550px) {
+  #container header, #container #form-div {
+    width: 100%;
+  }
+  #container #form-div {
+    height: auto;
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+    grid-template-areas: "form";
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
