@@ -16,103 +16,148 @@
 </head>
 <body>
     <main id="container">
-        <header>
-            <h1 id="title">COSTUMER SURVEY FORM</h1>
-        </header>
-
-        <div id="form-div">
+        <section id="container-form">
             <div class="vektor-img">
-                <img src="" alt="">
+                <img src="images/social.png" alt="">
             </div>
 
-            <form id="survey-form" action="">
-                <p id="description">
-                    Thank you for taking the Costumer Survey. Please rate your satisfaction level down below.
-                </p>
+            <div id="form-div">
+                <header>
+                    <h1 id="title">COSTUMER SURVEY FORM</h1>
+                </header>
 
-                <br>
-
-                <label for="name" id="name-label">Name:</label><br>
-                <input
-                    class="text-box"
-                    id="name"
-                    name="name"
-                    type="text"
-                    placeholder="Input your name..."
-                    required
-                />
-                
-                <br><br>
-                
-                <label for="email" id="email-label">Email:<label><br>
-                <input
-                    class="text-box"
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder="Input your email..."
-                    required
-                />
+                <form id="survey-form" action="">
+                    <p id="description">
+                        Thank you for taking the Costumer Survey. Please rate your satisfaction level down below.
+                    </p>
+    
+                    <br>
+    
+                    <label for="name" id="name-label">Name:</label><br>
+                    <input
+                        class="text-box"
+                        id="name"
+                        name="name"
+                        type="text"
+                        placeholder="Input your name..."
+                        required
+                    />
                     
-                <br><br>
-                
-                <label for="number" id="number-label">Age:<span>(optional)</span></label><br>
-                <input
-                    class="text-box"
-                    id="number"
-                    name="age"
-                    type="number"
-                    min="18"
-                    max="99"
-                    placeholder="Age..."
-                    required
-                />
-
-                <br><br>
-
-                <label for="role">Select which option bestdescribes your current role:</label><br>
-                <select id="dropdown" name="roles" required>
-                    <option value="not-choose" disabled selected>Current role...</option>
-                    <option value="student">Student</option>
-                    <option value="full-time-job">Full TimeJob</option>
-                    <option value="part-time-job">Part TimeJob</option>
-                    <option value="prefer-not-to-say">PreferNot To Say</option>
-                </select>
-
-                <br><br>
-                
-                <fieldset>
-                    <legend>How satisfied are you with thedeliver of our products?</legend>
+                    <br><br>
+                    
+                    <label for="email" id="email-label">Email:<label><br>
                     <input
-                        type="radio"
-                        name="items-1" 
-                        id="v-satisfied"
-                        value="very-satisfied"
+                        class="text-box"
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="Input your email..."
                         required
                     />
-                    <label for="very-satisfied">VerySatisfied</label>
-                    <br>
+                        
+                    <br><br>
+                    
+                    <label for="number" id="number-label">Age:<span>(optional)</span></label><br>
                     <input
-                        type="radio"
-                        name="items-1" 
-                        id="satisfied"
-                        value="satisfied"
+                        class="text-box"
+                        id="number"
+                        name="age"
+                        type="number"
+                        min="18"
+                        max="99"
+                        placeholder="Age..."
                         required
                     />
-                    <label for="satisfied">Satisfied</label>
+    
+                    <br><br>
+    
+                    <label for="role">Select which option best  describes your current role:</label><br>
+                    <select id="dropdown" name="roles" required>
+                        <option value="not-choose" disabled selected>Current role...</option>
+                        <option value="student">Student</option>
+                        <option value="full-time-job">Full TimeJob</option>
+                        <option value="part-time-job">Part TimeJob</option>
+                        <option value="prefer-not-to-say">PreferNot To Say</option>
+                    </select>
+    
+                    <br><br>
+                    
+                    <fieldset>
+                        <legend>How satisfied are you with the deliver of our products?</legend>
+                        <input
+                            type="radio"
+                            name="items-1" 
+                            id="v-satisfied"
+                            value="very-satisfied"
+                            required
+                        />
+                        <label for="very-satisfied">VerySatisfied</label>
+                        <br>
+                        <input
+                            type="radio"
+                            name="items-1" 
+                            id="satisfied"
+                            value="satisfied"
+                            required
+                        />
+                        <label for="satisfied">Satisfied</label>
+                        <br>
+                        <input 
+                            type="radio" 
+                            name="items-1" 
+                            id="neutral"
+                            value="neutral"
+                            required
+                        />
+                        <label for="neutral">Neutral</label>
+                        <br>
+                        <input
+                            type="radio"
+                            name="items-1"
+                            id=""
+                            value=""
+                            required
+                        />
+                    </fieldset>
+    
                     <br>
-                    <input 
-                        type="radio" 
-                        name="items-1" 
-                        id="neutral"
-                        value="neutral"
-                        value="neutral"
-                        required
-                    />
-                    <label for="neutral">Neutral</label>
-                </fieldset>
-            </form>
-        </div>
+    
+                    <fieldset>
+                        <legend>What would you like to see improved?</legend>
+                        <input
+                            type="checkbox"
+                            name="costumer-service"
+                            id="costumer-service"
+                            value="Costumer Service"
+                            required
+                        />
+                        <label for="costumer-service">Costumer Service</label>
+                        <br>
+                        <input 
+                            type="checkbox"
+                            name="products" 
+                            id="products"
+                            value="Products"
+                            required
+                        />
+                        <label for="products">Products</label>
+                        <br>
+                        <input
+                            type="checkbox"
+                            name="delivers"
+                            id="delivers"
+                            value="Delivers"
+                            required
+                        />
+                        <label for="delivers">Delivers</label>
+                    </fieldset>
+
+                    <br>
+
+
+                </form>
+            </div>
+        </section>
     </main>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
