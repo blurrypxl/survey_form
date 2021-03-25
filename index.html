@@ -33,7 +33,7 @@
     
                     <br>
     
-                    <label for="name" id="name-label">Name:</label><br>
+                    <label for="name" id="name-label">Name:</label><span class="important-question"> * </span><br>
                     <input
                         class="text-box"
                         id="name"
@@ -45,7 +45,7 @@
                     
                     <br><br>
                     
-                    <label for="email" id="email-label">Email:<label><br>
+                    <label for="email" id="email-label">Email:<label><span class="important-question"> * </span><br>
                     <input
                         class="text-box"
                         id="email"
@@ -71,33 +71,33 @@
     
                     <br><br>
     
-                    <label for="role">Select which option best  describes your current role:</label><br>
+                    <label for="role">Select which option best  describes your current role:</label><span class="important-question"> * </span><br>
                     <select id="dropdown" name="roles" required>
                         <option value="not-choose" disabled selected>Current role...</option>
                         <option value="student">Student</option>
-                        <option value="full-time-job">Full TimeJob</option>
-                        <option value="part-time-job">Part TimeJob</option>
-                        <option value="prefer-not-to-say">PreferNot To Say</option>
+                        <option value="full-time-job">Full Time Job</option>
+                        <option value="part-time-job">Part Time Job</option>
+                        <option value="prefer-not-to-say">Prefer Not To Say</option>
                     </select>
     
                     <br><br>
                     
                     <fieldset>
-                        <legend>How satisfied are you with the deliver of our products?</legend>
+                        <legend>How satisfied are you with the deliver of our products? <span class="important-question"> * </span></legend>
                         <input
                             type="radio"
                             name="items-1" 
                             id="v-satisfied"
-                            value="very-satisfied"
+                            value="Very Satisfied"
                             required
                         />
-                        <label for="very-satisfied">VerySatisfied</label>
+                        <label for="very-satisfied">Very Satisfied</label>
                         <br>
                         <input
                             type="radio"
                             name="items-1" 
                             id="satisfied"
-                            value="satisfied"
+                            value="Satisfied"
                             required
                         />
                         <label for="satisfied">Satisfied</label>
@@ -106,7 +106,7 @@
                             type="radio" 
                             name="items-1" 
                             id="neutral"
-                            value="neutral"
+                            value="Neutral"
                             required
                         />
                         <label for="neutral">Neutral</label>
@@ -114,16 +114,17 @@
                         <input
                             type="radio"
                             name="items-1"
-                            id=""
-                            value=""
+                            id="terrible"
+                            value="Terrible"
                             required
                         />
+                        <label for="terrible">Terrible</label>
                     </fieldset>
     
                     <br>
     
                     <fieldset>
-                        <legend>What would you like to see improved?</legend>
+                        <legend>What would you like to see improved? <span class="important-question"> * </span></legend>
                         <input
                             type="checkbox"
                             name="costumer-service"
@@ -154,7 +155,13 @@
 
                     <br>
 
+                    <label for="good-product-service">What product and/or service do you like?</label><span class="important-question"> * </span><br>
+                    <textarea class="text-area" name="good-reviews" id="good-product-service" rows="10" placeholder="Your reviews here..." required></textarea>
 
+                    <br><br>
+
+                    <label for="bad-product-service">What product and/or service do you dislike?</label><br>
+                    <textarea class="text-area"  name="bad-review" id="bad-product-service" rows="10" placeholder="Your reviews here..." required></textarea>
                 </form>
             </div>
         </section>

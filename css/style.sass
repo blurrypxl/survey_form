@@ -64,36 +64,65 @@ body
                     height: auto
 
             #form-div
-                // border: 2px solid yellow
+                border: 2px solid yellow
                 
-                grid-area: form
+                grid-area: form 
                 overflow: scroll
                 padding: 20px
 
                 #survey-form
+                    line-height: 30px
+
+                    .important-question
+                        color: red !important
+
                     #description
                         text-align: center
                         color: $colorSecondary
 
+                    .text-box
+                        border: 1px solid #b3b3b3
+                        width: 100%
+                        height: 40px
+
+                    .text-area
+                        width: 100%
+
+                // Mozilla-Scrollbar-Style-Start
+                scrollbar-width: thin
+                // Mozilla-Scrollbar-Style-End
+
+                // Chrome-Scrollbar-Style-Start
+                ::-webkit-scrollbar
+                    width: 10px
+
+                ::-webkit-scrollbar-track
+                    background: gray
+                // Chrome-Scrollbar-Style-End
+
 @media (max-width: 995px)
     body
+
         #container
             margin: 10px
             width: 100%
+
             #container-form
                 grid-template-areas: 'img img form form form'
 
 @media (max-width: 550px)
     body
+
         #container
             margin: 0
              
             #container-form
                 height: 100%
+                box-shadow: 0 0 0 0 transparent
                 grid-template-columns: 1fr
                 grid-template-areas: 'form'
 
                 .vektor-img
+                    border-radius: 0
                     position: absolute
-                    bottom: 100%
-                
+                    bottom: 10000px

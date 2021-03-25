@@ -51,13 +51,35 @@ body #container #container-form .vektor-img img {
   height: auto;
 }
 body #container #container-form #form-div {
+  border: 2px solid yellow;
   grid-area: form;
   overflow: scroll;
   padding: 20px;
+  scrollbar-width: thin;
+}
+body #container #container-form #form-div #survey-form {
+  line-height: 30px;
+}
+body #container #container-form #form-div #survey-form .important-question {
+  color: red !important;
 }
 body #container #container-form #form-div #survey-form #description {
   text-align: center;
   color: #5f5f5ffd;
+}
+body #container #container-form #form-div #survey-form .text-box {
+  border: 1px solid #b3b3b3;
+  width: 100%;
+  height: 40px;
+}
+body #container #container-form #form-div #survey-form .text-area {
+  width: 100%;
+}
+body #container #container-form #form-div ::-webkit-scrollbar {
+  width: 10px;
+}
+body #container #container-form #form-div ::-webkit-scrollbar-track {
+  background: gray;
 }
 
 @media (max-width: 995px) {
@@ -75,12 +97,14 @@ body #container #container-form #form-div #survey-form #description {
   }
   body #container #container-form {
     height: 100%;
+    box-shadow: 0 0 0 0 transparent;
     grid-template-columns: 1fr;
     grid-template-areas: "form";
   }
   body #container #container-form .vektor-img {
+    border-radius: 0;
     position: absolute;
-    bottom: 100%;
+    bottom: 10000px;
   }
 }
 
