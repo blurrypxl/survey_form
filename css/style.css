@@ -59,7 +59,7 @@ body #container #container-form .vektor-img {
   justify-content: center;
   grid-area: img;
   text-align: center;
-  text-size: inherit;
+  font-size: inherit;
 }
 body #container #container-form .vektor-img img {
   max-width: 100%;
