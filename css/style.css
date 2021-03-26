@@ -9,7 +9,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #dbdbdb;
+  background: #ececec;
 }
 
 * {
@@ -52,9 +52,11 @@ body #container #container-form {
   grid-template-areas: "img img form form form";
 }
 body #container #container-form .vektor-img {
-  background: linear-gradient(0deg, #9772ff 0%, #b800b1 100%);
+  border-right: 1px solid #a5a5a5ad;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   grid-area: img;
 }
 body #container #container-form .vektor-img img {
@@ -86,19 +88,27 @@ body #container #container-form #form-div #survey-form .text-box {
 body #container #container-form #form-div #survey-form .text-area {
   border: 1px solid #b3b3b3;
   width: 100%;
-  font-size: 1vw;
+  font-size: 14px;
   line-height: 20px;
 }
-body #container #container-form #form-div #survey-form #submit {
+body #container #container-form #form-div #survey-form .form-section {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+body #container #container-form #form-div #survey-form .submit-section {
+  display: flex;
+  justify-content: flex-end;
+}
+body #container #container-form #form-div #survey-form .submit-section #submit {
   border: 3px solid #9772ff;
   border-radius: 2px;
   background-color: transparent;
-  width: 20%;
+  width: 100px;
   height: 35px;
   color: #9772ff;
   font-weight: bold;
 }
-body #container #container-form #form-div #survey-form #submit:hover {
+body #container #container-form #form-div #survey-form .submit-section #submit:hover {
   border: 3px solid #9772ff;
   background-color: #9772ff;
   color: white;

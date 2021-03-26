@@ -18,7 +18,9 @@
     <main id="container">
         <section id="container-form">
             <div class="vektor-img">
-                <img src="images/social.png" alt="">
+                <img src="images/lime-message-sent.png" alt="">
+                
+                <p>Illustration by <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a></p>
             </div>
 
             <div id="form-div">
@@ -30,120 +32,140 @@
                     <p id="description">
                         Thank you for taking the Costumer Survey. Please rate your satisfaction level down below.
                     </p>
-    
-                    <label for="name" id="name-label">Name:</label><span class="important-question"> * </span><br>
-                    <input
-                        class="text-box"
-                        id="name"
-                        name="name"
-                        type="text"
-                        placeholder="Input your name..."
-                        required
-                    />
-
-                    <label for="email" id="email-label">Email:<label><span class="important-question"> * </span><br>
-                    <input
-                        class="text-box"
-                        id="email"
-                        name="email"
-                        type="email"
-                        placeholder="Input your email..."
-                        required
-                    />
                     
-                    <label for="number" id="number-label">Age:</label><br>
-                    <input
-                        class="text-box"
-                        id="number"
-                        name="age"
-                        type="number"
-                        min="18"
-                        max="99"
-                        placeholder="Age..."
-                        required
-                    />
-    
-                    <label for="role">Select which option best  describes your current role:</label><span class="important-question"> * </span><br>
-                    <select id="dropdown" name="roles" required>
-                        <option value="not-choose" disabled selected>Current role...</option>
-                        <option value="student">Student</option>
-                        <option value="full-time-job">Full Time Job</option>
-                        <option value="part-time-job">Part Time Job</option>
-                        <option value="prefer-not-to-say">Prefer Not To Say</option>
-                    </select><br>
+                    <section class="form-section">
+                        <label for="name" id="name-label">Name:</label><span class="important-question"> * </span><br>
+                        <input
+                            class="text-box"
+                            id="name"
+                            name="name"
+                            type="text"
+                            placeholder="Input your name..."
+                            required
+                        />
+                    </section>
+
+                    <section class="form-section">
+                        <label for="email" id="email-label">Email:<label><span class="important-question"> * </span><br>
+                            <input
+                                class="text-box"
+                                id="email"
+                                name="email"
+                                type="email"
+                                placeholder="Input your email..."
+                                required
+                            />
+                    </section>
                     
-                    <label>How satisfied are you withthe deliver of our products?</label><span class="important-question"> * </span><br>
-                    <input
-                        type="radio"
-                        name="items-1" 
-                        id="v-satisfied"
-                        value="Very Satisfied"
-                        required
-                    />
-                    <label for="very-satisfied">Very Satisfied</label>
-                    <br>
-                    <input
-                        type="radio"
-                        name="items-1" 
-                        id="satisfied"
-                        value="Satisfied"
-                        required
-                    />
-                    <label for="satisfied">Satisfied</label>
-                    <br>
-                    <input 
-                        type="radio" 
-                        name="items-1" 
-                        id="neutral"
-                        value="Neutral"
-                        required
-                    />
-                    <label for="neutral">Neutral</label>
-                    <br>
-                    <input
-                        type="radio"
-                        name="items-1"
-                        id="terrible"
-                        value="Terrible"
-                        required
-                    />
-                    <label for="terrible">Terrible</label><br>
+                    <section class="form-section">
+                        <label for="number" id="number-label">Age:</label><br>
+                        <input
+                            class="text-box"
+                            id="number"
+                            name="age"
+                            type="number"
+                            min="18"
+                            max="99"
+                            placeholder="Age..."
+                            required
+                        />
+                    </section>
+                    
+                    <section class="form-section">
+                        <label for="role">Select which option best  describes your current role:</label><span class="important-question"> * </span><br>
+                        <select id="dropdown" name="roles" required>
+                            <option value="not-choose" disabled selected>Current role...</option>
+                            <option value="student">Student</option>
+                            <option value="full-time-job">Full Time     Job</option>
+                            <option value="part-time-job">Part Time     Job</option>
+                            <option value="prefer-not-to-say">Prefer    Not To Say</option>
+                        </select>
+                    </section>
+                    
+                    <section class="form-section">
+                        <label>How satisfied are you withthe deliver of our products?</label><span class="important-question"> * </span><br>
+                        <input
+                            type="radio"
+                            name="items-1" 
+                            id="v-satisfied"
+                            value="Very Satisfied"
+                            required
+                        />
+                        <label for="very-satisfied">Very Satisfied</    label>
+                        <br>
+                        <input
+                            type="radio"
+                            name="items-1" 
+                            id="satisfied"
+                            value="Satisfied"
+                            required
+                        />
+                        <label for="satisfied">Satisfied</label>
+                        <br>
+                        <input 
+                            type="radio" 
+                            name="items-1" 
+                            id="neutral"
+                            value="Neutral"
+                            required
+                        />
+                        <label for="neutral">Neutral</label>
+                        <br>
+                        <input
+                            type="radio"
+                            name="items-1"
+                            id="terrible"
+                            value="Terrible"
+                            required
+                        />
+                        <label for="terrible">Terrible</label>
+                    </section>
 
-                    <label>What would you like to see improved?</label><span class="important-question"> * </span><br>
-                    <input
-                        type="checkbox"
-                        name="costumer-service"
-                        id="costumer-service"
-                        value="Costumer Service"
-                        required
-                    />
-                    <label for="costumer-service">Costumer Service</label>
-                    <br>
-                    <input 
-                        type="checkbox"
-                        name="products" 
-                        id="products"
-                        value="Products"
-                        required
-                    />
-                    <label for="products">Products</label>
-                    <br>
-                    <input
-                        type="checkbox"
-                        name="delivers"
-                        id="delivers"
-                        value="Delivers"
-                        required
-                    />
-                    <label for="delivers">Delivers</label><br>
+                    <section class="form-section">
+                        <label>What would you like to see improved?</label><span class="important-question"> * </span><br>
+                        <input
+                            type="checkbox"
+                            name="costumer-service"
+                            id="costumer-service"
+                            value="Costumer Service"
+                            required
+                        />
+                        <label for="costumer-service">Costumer  Service</label>
+                        <br>
+                        <input 
+                            type="checkbox"
+                            name="products" 
+                            id="products"
+                            value="Products"
+                            required
+                        />
+                        <label for="products">Products</label>
+                        <br>
+                        <input
+                            type="checkbox"
+                            name="delivers"
+                            id="delivers"
+                            value="Delivers"
+                            required
+                        />
+                        <label for="delivers">Delivers</label>
+                    </section>   
 
-                    <label for="good-product-service">What product and/or service do you like?</label><span class="important-question"> * </span><br>
-                    <textarea class="text-area" name="good-reviews" id="good-product-service" rows="10" placeholder="Your reviews here..." required></textarea>
+                    <section class="form-section">
+                        <label for="good-product-service">What product and/or service do you like?</label><span class="important-question"> * </span>
+                        <br>
+                        <textarea class="text-area" name="good-reviews" id="good-product-service" rows="10" placeholder="Your reviews here..." required></textarea>
+                    </section>
 
-                    <label for="bad-product-service">What product and/or service do you dislike?</label><span class="important-question"> * </span><br>
-                    <textarea class="text-area"  name="bad-review" id="bad-product-service" rows="10" placeholder="Your reviews here..." required></textarea>
+                    <section class="form-section">
+                        <label for="bad-product-service">What product and/or service do you dislike?</label><span class="important-question"> * </span>
+                        <br>
+                        <textarea class="text-area"  name="bad-review" id="bad-product-service" rows="10" placeholder="Your reviews here..." required></textarea>
+                    </section>
 
-                    <button id="submit" onclick="">SUBMIT</button>
+                    <section class="submit-section">
+                        <button id="submit" onclick="">SUBMIT</button>
+                    </section>
                 </form>
             </div>
         </section>

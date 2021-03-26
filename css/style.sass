@@ -12,7 +12,7 @@ $colorSecondary: #5f5f5ffd
     background: transparent
 
 ::-webkit-scrollbar-thumb
-    background: #dbdbdb
+    background: #ececec
 // Chrome-Scrollbar-Style-End
 
 * 
@@ -68,11 +68,14 @@ body
             .vektor-img
                 // border: 2px solid orange
                 
-                background: linear-gradient(0deg, rgba(151,114,255,1) 0%, rgba(184,0,177,1) 100%)
+                border-right: 1px solid #a5a5a5ad
+                // background: linear-gradient(0deg, rgba(151,114,255,1) 0%, rgba(184,0,177,1) 100%)
                 // border-top-left-radius: 5px
                 // border-bottom-left-radius: 5px
                 display: flex
+                flex-direction: column
                 align-items: center
+                justify-content: center
                 grid-area: img
 
                 img
@@ -106,22 +109,32 @@ body
                     .text-area
                         border: 1px solid #b3b3b3
                         width: 100%
-                        font-size: 1vw
+                        font-size: 14px
                         line-height: 20px
+                    
+                    .form-section
+                        // border: 1px solid black
+                        margin-top: 20px
+                        margin-bottom: 10px
 
-                    #submit
-                        border: 3px solid rgba(151,114,255,1)
-                        border-radius: 2px
-                        background-color: transparent
-                        width: 20%
-                        height: 35px
-                        color: rgba(151,114,255,1)
-                        font-weight: bold
+                    .submit-section
+                        // border: 1px solid black
+                        display: flex
+                        justify-content: flex-end
 
-                    #submit:hover
-                        border: 3px solid rgba(151,114,255,1)
-                        background-color: rgba(151,114,255,1)
-                        color: white
+                        #submit
+                            border: 3px solid rgba(151,114,255,1)
+                            border-radius: 2px
+                            background-color: transparent
+                            width: 100px
+                            height: 35px
+                            color: rgba(151,114,255,1)
+                            font-weight: bold
+
+                        #submit:hover
+                            border: 3px solid rgba(151,114,255,1)
+                            background-color: rgba(151,114,255,1)
+                            color: white
 
 @media (max-width: 995px)
     body
