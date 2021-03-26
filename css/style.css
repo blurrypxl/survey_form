@@ -58,6 +58,8 @@ body #container #container-form .vektor-img {
   align-items: center;
   justify-content: center;
   grid-area: img;
+  text-align: center;
+  text-size: inherit;
 }
 body #container #container-form .vektor-img img {
   max-width: 100%;
@@ -78,18 +80,22 @@ body #container #container-form #form-div #survey-form #description {
   text-align: center;
   color: #5f5f5ffd;
 }
-body #container #container-form #form-div #survey-form .text-box {
+body #container #container-form #form-div #survey-form .input-box {
   border: 1px solid #b3b3b3;
   border-radius: 5px;
   width: 100%;
   height: 50px;
+  padding: 0 10px;
   font-size: inherit;
+  box-sizing: border-box;
 }
 body #container #container-form #form-div #survey-form .text-area {
   border: 1px solid #b3b3b3;
   width: 100%;
   font-size: 14px;
   line-height: 20px;
+  padding: 5px 10px;
+  box-sizing: border-box;
 }
 body #container #container-form #form-div #survey-form .form-section {
   margin-top: 20px;

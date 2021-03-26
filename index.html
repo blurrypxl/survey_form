@@ -36,7 +36,7 @@
                     <section class="form-section">
                         <label for="name" id="name-label">Name:</label><span class="important-question"> * </span><br>
                         <input
-                            class="text-box"
+                            class="input-box"
                             id="name"
                             name="name"
                             type="text"
@@ -48,7 +48,7 @@
                     <section class="form-section">
                         <label for="email" id="email-label">Email:<label><span class="important-question"> * </span><br>
                             <input
-                                class="text-box"
+                                class="input-box"
                                 id="email"
                                 name="email"
                                 type="email"
@@ -58,22 +58,21 @@
                     </section>
                     
                     <section class="form-section">
-                        <label for="number" id="number-label">Age:</label><br>
+                        <label for="number" id="number-label">Age:</label><span>(optional)</span><br>
                         <input
-                            class="text-box"
+                            class="input-box"
                             id="number"
                             name="age"
                             type="number"
                             min="18"
                             max="99"
                             placeholder="Age..."
-                            required
                         />
                     </section>
                     
                     <section class="form-section">
                         <label for="role">Select which option best  describes your current role:</label><span class="important-question"> * </span><br>
-                        <select id="dropdown" name="roles" required>
+                        <select class="input-box" id="dropdown" name="roles" required>
                             <option value="not-choose" disabled selected>Current role...</option>
                             <option value="student">Student</option>
                             <option value="full-time-job">Full Time     Job</option>
